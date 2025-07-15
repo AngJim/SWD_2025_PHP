@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  gestione-eventi:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    container_name: gestione_eventi_app
